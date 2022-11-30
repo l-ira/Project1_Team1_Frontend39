@@ -1,0 +1,113 @@
+.main-content{
+    display: flex;  
+    height: 1080px;
+    margin: 0;
+    padding-top: 218px;
+    margin: 0 auto;
+    width: 1349px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("./assets/images/images/fon_trees.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.CTA{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 714px;
+    width: 619px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 80px;
+    background-color: #46332dd0;
+}   
+
+h1{
+    position: relative;
+    margin: 0;
+    color: #F5F5F5;
+}
+
+.title-1{
+    position: relative;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.title-2{
+    position: relative;
+    font-size: 20px;
+    margin-top: 25px;
+
+}
+
+div>p{
+    color: #FFDBBB;
+}
+
+.main-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    align-items: center;
+    height: 714px;
+    width: 619px; 
+    background-color: #46332dd0;  
+
+}
+
+.image-1{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+.image-2{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 50px;
+}
+
+.image-3{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.title-3{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin:  50px;
+    padding: 10px;
+}
