@@ -1,9 +1,8 @@
 .main-content{
     display: flex;  
     height: 1080px;
-    margin: 0;
-    padding-top: 218px;
     margin: 0 auto;
+    padding-top: 218px;
     width: 1349px;
     position: relative;
     justify-content: flex-end;
@@ -42,6 +41,12 @@ h1{
     color: #F5F5F5;
 }
 
+h2{
+    position: relative;
+    margin: 0;
+    color: #F5F5F5;
+}
+
 .title-1{
     position: relative;
     font-size: 40px;
@@ -52,13 +57,15 @@ h1{
     position: relative;
     font-size: 20px;
     margin-top: 25px;
-
 }
 
 div>p{
     color: #FFDBBB;
 }
 
+thead{
+    color: #FFDBBB;
+}
 .main-images{
     display: flex;
     flex-direction: column;
@@ -70,7 +77,6 @@ div>p{
     height: 714px;
     width: 619px; 
     background-color: #46332dd0;  
-
 }
 
 .image-1{
@@ -91,17 +97,11 @@ div>p{
     margin-left: 50px;
 }
 
-.wrap{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
 .title-3{
-    display: flex;
     text-align: center;
     margin: 0;
     padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 .block {
@@ -110,4 +110,48 @@ div>p{
     position: relative;
     margin:  50px;
     padding: 10px;
+    width: 1050px;
+    height: 380px;
+    position: relative;
+    margin: 0 auto;
 }
+
+.table-wood-type{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.table-wood-type p{
+    margin: 0 0 15px 0;
+}
+.table-title{
+    text-align: center;
+    padding: 15px 0 0px 0;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-4{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.gallery{
+    display: flex;
+    position: relative;
+    width: 1250px;
+    height: 560px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.gallery img{
+    width: 800px;
+    height: 500px;
+}
+
