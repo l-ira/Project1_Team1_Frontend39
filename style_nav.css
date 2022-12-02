@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&family=Open+Sans:wght@500&display=swap');
+
 * {
     font-family: "Montserrat";
     margin: 0;
@@ -7,35 +8,49 @@
 }
 
 body {
-    background:#222021c7;
+    background: #222021c7;
 }
 
 .header {
     position: relative;
     width: 100%;
     height: 228px;
-    top: -45px;
+    margin-top: -45px;
     display: flex;
-    box-shadow: 0px -8px 52px rgba(245, 245, 245, 0.17); /*тень от блока*/;
-    border-radius: 0px 0px 79px 79px; /*скругление углов*/
+    box-shadow: 0px -8px 52px rgba(245, 245, 245, 0.17);
+    /*тень от блока*/
+    ;
+    border-radius: 0px 0px 79px 79px;
+    /*скругление углов*/
     justify-content: space-between;
     align-items: center;
     background: #1E0C06;
     padding: 0 25px;
     transition: 0.3s;
 }
-.logo a{
+
+.header_404 {
+    background: none;
+    box-shadow: none;
+    margin-top: -250px;
+    /*не поняла почему так,но никак по другому не встает на место*/
+}
+
+.logo a {
     display: block;
 }
-.logo a img{
+
+.logo a img {
     display: block;
     width: 100%;
 }
+
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .menu {
     display: flex;
     justify-content: center;
@@ -44,9 +59,11 @@ body {
     z-index: 1;
     transition: 0.5s;
 }
+
 .menu li {
     list-style-type: none;
 }
+
 .menu li a {
     color: #F5F5F5;
     text-decoration: none;
@@ -56,10 +73,13 @@ body {
     line-height: 1;
     transition: 0.3s;
 }
+
 .menu li a:hover {
-    box-shadow: 0px -5px 0px rgb(209, 21, 226) inset; /*выделение элементов меню и подчеркивание*/
+    box-shadow: 0px -5px 0px rgb(209, 21, 226) inset;
+    /*выделение элементов меню и подчеркивание*/
     padding: 5px 5px 5px 5px;
 }
+
 .hamburger {
     position: relative;
     width: 30px;
@@ -70,6 +90,7 @@ body {
     z-index: 2;
     transition: 0.3s;
 }
+
 .hamburger:before,
 .hamburger:after {
     content: "";
@@ -80,14 +101,17 @@ body {
     border-radius: 10px;
     transition: 0.3s;
 }
+
 .hamburger:before {
     top: -10px;
     width: 20px;
 }
+
 .hamburger:after {
     top: 10px;
     width: 20px;
 }
+
 .toggle-menu {
     position: absolute;
     width: 30px;
@@ -96,55 +120,66 @@ body {
     cursor: pointer;
     opacity: 0;
 }
+
 .hamburger,
 .toggle-menu {
-    display: none; /*убрали гамбургер*/
+    display: none;
+    /*убрали гамбургер*/
 }
-.navigation input:checked ~ .hamburger {
+
+.navigation input:checked~.hamburger {
     background: transparent;
 }
-.navigation input:checked ~ .hamburger:before {
+
+.navigation input:checked~.hamburger:before {
     top: 0;
     transform: rotate(-45deg);
     width: 30px;
-} 
-.navigation input:checked ~ .hamburger:after {
+}
+
+.navigation input:checked~.hamburger:after {
     top: 0;
     transform: rotate(45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .menu {
+.navigation input:checked~.menu {
     right: 0;
     box-shadow: 0px -8px 52px rgba(245, 245, 245, 0.17);
 }
 
 @media screen and (max-width: 992px) {
+
     .hamburger,
     .toggle-menu {
-        display: block; /*убрали гамбургер*/
-}
-.header {
-    padding: 10px 20px;
-}
-.menu {
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    background: #1E0C06;
-    width: 300px;
-    height: 100%;
-    padding-top: 65px;
-}
-.menu li {
-    width: 100%;
-}
-.menu li a,
-.menu li a:hover {
-    padding: 30px;
-    font-size: 24px;
-    box-shadow: 0px -5px 0px rgb(209, 21, 226) inset;   
-}
+        display: block;
+        /*убрали гамбургер*/
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #1E0C06;
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0px -5px 0px rgb(209, 21, 226) inset;
+    }
