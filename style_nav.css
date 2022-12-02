@@ -181,5 +181,5 @@ body {
     .menu li a:hover {
         padding: 30px;
         font-size: 24px;
-        box-shadow: 0px -5px 0px rgb(209, 21, 226) inset;
+        box-shadow: 0px -5px 0px rgb(209, 21, 226) inset
     }
