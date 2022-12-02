@@ -3,10 +3,17 @@
     height: 1080px;
     margin: 0 auto;
     padding-top: 218px;
-    width: 1349px;
+    width: 100hv; /*1349px; изменила, потому что картинка в моих браузерах была не на весь экран*/
     position: relative;
     justify-content: flex-end;
     align-items: center;
+    background-image: url("./assets/images/images/fon_trees.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main-content_back{     /*добавила в боди бэк, потому что у меня не работал фон ни в одном браузере*/
     background-image: url("./assets/images/images/fon_trees.png");
     background-size: cover;
     background-attachment: fixed;
@@ -72,6 +79,7 @@ h2 {
     line-height: 36px;
     letter-spacing: 0em;
     text-align: center;
+    color: #F5F5F5;
 }
 
 .div_404 {
@@ -84,11 +92,7 @@ h2 {
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD:style.css
-.title-2 {
-=======
-.title-2 p{
->>>>>>> ca6207c7d260e281eae9c2bc4d764775233af260:main.css
+.title-2 p {
     position: relative;
     font-size: 20px;
     margin-top: 25px;
@@ -99,15 +103,7 @@ div>p {
     color: #FFDBBB;
 }
 
-<<<<<<< HEAD:style.css
-thead {
-    color: #FFDBBB;
-}
-
 .main-images {
-=======
-.main-images{
->>>>>>> ca6207c7d260e281eae9c2bc4d764775233af260:main.css
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,11 +145,6 @@ thead {
     display: flex;
     justify-content: space-between;
     position: relative;
-<<<<<<< HEAD:style.css
-    margin: 50px;
-    padding: 10px;
-=======
->>>>>>> ca6207c7d260e281eae9c2bc4d764775233af260:main.css
     width: 1050px;
     height: 380px;
     position: relative;
@@ -170,11 +161,7 @@ thead {
     margin: 0 0 15px 0;
 }
 
-<<<<<<< HEAD:style.css
 .table-title {
-=======
-.table-title{
->>>>>>> ca6207c7d260e281eae9c2bc4d764775233af260:main.css
     text-align: center;
     padding: 15px 0 0px 0;
 }
@@ -204,49 +191,46 @@ thead {
 .gallery img {
     width: 800px;
     height: 500px;
-<<<<<<< HEAD:style.css
-}
-=======
 }
 
-.block-advantages{
+.block-advantages {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.title-5{
+.title-5 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.block-description{
+.block-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:stretch;
+    align-items: stretch;
     margin: 0 auto;
     width: 1050px;
     height: 380px;
     padding: 50px;
 }
 
-.block-video{
+.block-video {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     width: 560px;
 }
 
-iframe{
+iframe {
     border-radius: 20px;
 }
 
-.block-text{
+.block-text {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -257,17 +241,17 @@ iframe{
     padding: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
     ;
 }
 
-li{
+li {
     color: #FFDBBB;
     padding-bottom: 20px;
 }
 
-.description-button{
+.description-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,7 +260,7 @@ li{
 
 }
 
-.block-about{
+.block-about {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -290,14 +274,14 @@ li{
     margin: 0;
 }
 
-.title-6{
+.title-6 {
     display: flex;
     flex-direction: column;
     position: relative;
     padding-bottom: 20px;
 }
 
-.text-about{
+.text-about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -306,7 +290,7 @@ li{
     padding: 0;
 }
 
-.about-images{
+.about-images {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -315,28 +299,25 @@ li{
     margin: 0;
     align-items: center;
     height: 800px;
-    width: 560px; 
-    background-color: #46332dd0;  
+    width: 560px;
+    background-color: #46332dd0;
 }
 
-.image-4{
+.image-4 {
     display: flex;
     align-self: flex-end;
     margin-left: 50px;
-    margin-bottom:-100px;
+    margin-bottom: -100px;
 }
 
-.image-5{
+.image-5 {
     display: flex;
     align-self: center;
     margin-right: 50px;
-    margin-bottom:;
 }
 
-.image-6{
+.image-6 {
     display: flex;
     align-self: flex-end;
     margin-left: 50px;
 }
-
->>>>>>> ca6207c7d260e281eae9c2bc4d764775233af260:main.css
