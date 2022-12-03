@@ -26,12 +26,12 @@
 .main-content_contact {
     background-color: #222021;
     background-image: none;
-    border: #F5F5F5 solid 2px;
+   
 }
 
 .div_contact {
     text-align: left;
-    border: #F5F5F5 solid 2px;
+  
 }
 
 .main-content::before {
@@ -77,6 +77,10 @@ h1 {
     line-height: 539px;
     text-align: center;
     align-items: center;
+}
+
+.h1_contact {
+margin-top: -300px;
 }
 
 h2 {
@@ -343,18 +347,21 @@ li {
     margin-left: 50px;
 }
 
-.a_tel:before {
-    content: "\260F";
-    margin-right: 0.5 em;
+.img_o{
+    margin-right: -29px;
+    margin-top: -5px;
+}
+
+.iframe {
+    margin-bottom: 100px;
 }
 
 .a_tel,
 .a_address {
     text-decoration: none;
     color: #F5F5F5;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: -10px;
 }
 
-.a_address:before {
-    content: "\260F";
-    margin-right: 0.5 em;
-}
