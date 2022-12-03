@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #222021;
+    background-size: cover;
+    
+}
+input, textarea {
+  padding-left: 47px;
+  padding-top: 18px;
+  background-color: #222021;
+}
+
+.form-fields {
+  height: 555px;
+  margin-top: 42px;
+  margin-left: 120px;
+}
+.form-field1,
+.form-field2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  width: 598px; 
+  border: 4px solid #728BAD;
+  border-radius: 42px;
+  background-color: #222021;
+  margin-bottom: 23px;
+}
+
+.form-field1 {
+  height: 77px;
+}
+.form-field2 {
+  min-height: 257px; /* минимальная высота поля сообщений */
+}
+
+.button-sent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 70px;
+  gap: 10px;
+  border-radius: 42px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #F5F5F5;
+  background-color: #728BAD;
+  border: 1px solid #728BAD;
+  width: 216px;
+  height: 58px;
+  }
+
+.form-title {
+  color: #F5F5F5;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 120px;
+  width: 904px;
+  height: 120px;
+  font-family:@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Inter:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;500&family=Oswald:wght@400;500&family=Roboto:ital,wght@0,500;1,100&family=Saira:wght@700&display=swap');
+  margin-right: 55px;
+}
+
+.text-about {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: right;
+  color: #F5F5F5;
+  width: 546px;
+  height: 126px;
+  margin-left: 200px;
+  margin-top: 42px;
+}
+
+.about-images {
+  width: 540.13px;
+  height: 550.24px;
+  left: 716.1px;
+  margin-left: 200px;
+}
+
+
