@@ -274,7 +274,6 @@ li{
     display: flex;
     align-self: center;
     margin-right: 50px;
-    margin-bottom:;
 }
 
 .image-6{
@@ -283,3 +282,14 @@ li{
     margin-left: 50px;
 }
 
+.footer{
+    width: 1349px;
+    height: 300px;
+}
+
+.footer__logo{
+    width: 197px;
+    height: 84px;
+    margin: 0;
+    padding: 0;
+}
