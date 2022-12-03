@@ -36,6 +36,11 @@ body {
     /*не поняла почему так,но никак по другому не встает на место*/
 }
 
+.header_contact {
+    margin-top: -500px;
+    width: 100vw;
+}
+
 .logo a {
     display: block;
 }

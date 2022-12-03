@@ -56,6 +56,11 @@
     margin-bottom: 50px;
 }
 
+.button-go_a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
 .button-receive {
     color: #F5F5F5;
     background-color: #728BAD;
@@ -63,5 +68,5 @@
     padding: 11px 68px;
     gap: 10px;
     width: 472px;
-    height: 58px;   
+    height: 58px;
 }
