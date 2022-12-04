@@ -3,7 +3,7 @@
     height: 1080px;
     margin: 0 auto;
     padding-top: 218px;
-    width: 100hv;
+    width: 100vw;
     /*1349px; изменила, потому что картинка в моих браузерах была не на весь экран*/
     position: relative;
     justify-content: flex-end;
@@ -298,6 +298,7 @@ li {
     padding-left: 60px;
     background-color: #46332dd0;
     margin: 0;
+    -moz-box-shadow: 0 0 100px;
 }
 
 .title-6 {
@@ -366,3 +367,75 @@ li {
     margin-bottom: -10px;
 }
 
+.footer:not(.footer__logo-privacy){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 98vw;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    border: 1px black solid;
+}
+
+.footer__logo-privacy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+    width: 300px;
+}
+
+.footer__logo{
+    position: relative;
+    margin: 0;
+    padding-left: 102px;
+    padding-bottom: 30px;
+}
+
+.footer__policy{
+    display: flex;
+    margin: 0;
+    padding-left: 50px;
+    flex-direction: column;
+    /*padding-top: 58px;*/
+}
+
+a:link{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F5F5F5;
+    
+}
+
+.footer__icon>img{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #F5F5F5;
+}
+
+.footer__tel-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 377px;
+    color: #F5F5F5;
+}
+
+.footer__address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 377px;
+    color: #F5F5F5;
+}
