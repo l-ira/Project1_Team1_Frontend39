@@ -1,5 +1,6 @@
 .main-content {
     display: flex;
+    flex-wrap: wrap;
     height: 1080px;
     margin: 0 auto;
     padding-top: 218px;
@@ -13,6 +14,15 @@
     background-attachment: fixed;
     background-position: center;
     z-index: -1;
+    flex: 1 1 333.3px;
+    box-sizing: border-box;
+}
+
+.main-content_back{
+    background-image: url(/Project1_Team1/assets/images/images/background-2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /*.main-content_back {
@@ -55,6 +65,8 @@
     padding-left: 80px;
     background-color: #46332d;
     z-index: 1;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 0 1px 50px 1px #F5F5F5 ;
 }
 
 h1 {
@@ -141,6 +153,7 @@ div>p {
     width: 619px;
     background-color: #46332d;
     z-index: 1;
+    /*box-shadow: 0 1px 50px -1px #F5F5F5;*/
 }
 
 .image-1 {
@@ -301,6 +314,7 @@ li {
     background-color: #46332d;
     margin: 0;
     z-index: -1;
+    border-radius: 0 30px 30px 0;
 }
 
 .title-6 {
@@ -330,6 +344,7 @@ li {
     height: 800px;
     width: 530px;
     background-color: #46332dd0;
+    border-radius: 0 30px 30px 0;
 }
 
 .image-4 {
@@ -443,3 +458,4 @@ a:hover{
     width: 377px;
     color: #F5F5F5;
 }
+
