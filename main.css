@@ -1,9 +1,10 @@
-.main-content{
-    display: flex;  
+.main-content {
+    display: flex;
     height: 1080px;
     margin: 0 auto;
     padding-top: 218px;
-    width: 1349px;
+    width: 100hv;
+    /*1349px; изменила, потому что картинка в моих браузерах была не на весь экран*/
     position: relative;
     justify-content: flex-end;
     align-items: center;
@@ -11,19 +12,39 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    z-index: 1;
 }
 
-.main-content::before{
+/*.main-content_back {
+    добавила в боди бэк, потому что у меня не работал фон ни в одном браузере
+    background-image: url("./assets/images/images/fon_trees.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}*/
+
+.main-content_contact {
+    background-color: #222021;
+    background-image: none;
+   
+}
+
+.div_contact {
+    text-align: left;
+  
+}
+
+.main-content::before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
-.CTA{
+.CTA {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -33,38 +54,81 @@
     justify-content: center;
     padding-left: 80px;
     background-color: #46332dd0;
-}   
+}
 
-h1{
+h1 {
+    position: relative;
+    margin: 0;
+    color: #F5F5F5;
+    font-family: 
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: left;
+    /*у всех h1 одинаковые параметры, у any questions text-align: right*/
+}
+
+.h1_404 {
+    justify-content: center;
+    font-family: 
+    font-size: 500px;
+    font-weight: 900;
+    line-height: 539px;
+    text-align: center;
+    align-items: center;
+}
+
+.h1_contact {
+margin-top: -300px;
+}
+
+h2 {
     position: relative;
     margin: 0;
     color: #F5F5F5;
 }
 
-h2{
-    position: relative;
-    margin: 0;
+.h2_404 {
+    font-family: KyivType Sans;
+    font-size: 90px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.p_404 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
     color: #F5F5F5;
 }
 
-.title-1{
+.div_404 {
+    text-align: center;
+}
+
+.title-1 {
     position: relative;
     font-size: 40px;
     text-transform: uppercase;
 }
 
-.title-2 p{
+.title-2 p {
     position: relative;
     font-size: 20px;
     margin-top: 25px;
     padding-bottom: 50px;
 }
 
-div>p{
+div>p {
     color: #FFDBBB;
 }
 
-.main-images{
+.main-images {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,29 +137,29 @@ div>p{
     margin: 0;
     align-items: center;
     height: 714px;
-    width: 619px; 
-    background-color: #46332dd0;  
+    width: 619px;
+    background-color: #46332dd0;
 }
 
-.image-1{
+.image-1 {
     display: flex;
     align-self: flex-start;
     margin-left: 50px;
 }
 
-.image-2{
+.image-2 {
     display: flex;
     align-self: flex-end;
     margin-right: 50px;
 }
 
-.image-3{
+.image-3 {
     display: flex;
     align-self: flex-start;
     margin-left: 50px;
 }
 
-.title-3{
+.title-3 {
     text-align: center;
     margin: 0;
     padding-top: 100px;
@@ -113,84 +177,86 @@ div>p{
     padding: 0;
 }
 
-.table-wood-type{
+.table-wood-type {
     border-collapse: separate;
     border-spacing: 0 15px;
 }
 
-.table-wood-type p{
+.table-wood-type p {
     margin: 0 0 15px 0;
 }
 
-.table-title{
+.table-title {
     text-align: center;
     padding: 15px 0 0px 0;
 }
 
-.portfolio{
+.portfolio {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.title-4{
+.title-4 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
 }
-.gallery{
+
+.gallery {
     display: flex;
     position: relative;
     width: 1250px;
     height: 560px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.gallery img{
+.gallery img {
     width: 800px;
     height: 500px;
+    z-index: 2;
 }
 
-.block-advantages{
+.block-advantages {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.title-5{
+.title-5 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.block-description{
+.block-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:stretch;
+    align-items: stretch;
     margin: 0 auto;
     width: 1050px;
     height: 380px;
     padding: 50px;
 }
 
-.block-video{
+.block-video {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     width: 560px;
 }
 
-iframe{
+iframe {
     border-radius: 20px;
 }
 
-.block-text{
+.block-text {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -201,17 +267,17 @@ iframe{
     padding: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
     ;
 }
 
-li{
+li {
     color: #FFDBBB;
     padding-bottom: 20px;
 }
 
-.description-button{
+.description-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +286,7 @@ li{
 
 }
 
-.block-about{
+.block-about {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -234,14 +300,14 @@ li{
     margin: 0;
 }
 
-.title-6{
+.title-6 {
     display: flex;
     flex-direction: column;
     position: relative;
     padding-bottom: 20px;
 }
 
-.text-about{
+.text-about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -250,7 +316,7 @@ li{
     padding: 0;
 }
 
-.about-images{
+.about-images {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -259,37 +325,44 @@ li{
     margin: 0;
     align-items: center;
     height: 800px;
-    width: 560px; 
-    background-color: #46332dd0;  
+    width: 560px;
+    background-color: #46332dd0;
 }
 
-.image-4{
+.image-4 {
     display: flex;
     align-self: flex-end;
     margin-left: 50px;
-    margin-bottom:-100px;
+    margin-bottom: -100px;
 }
 
-.image-5{
+.image-5 {
     display: flex;
     align-self: center;
     margin-right: 50px;
 }
 
-.image-6{
+.image-6 {
     display: flex;
     align-self: flex-end;
     margin-left: 50px;
 }
 
-.footer{
-    width: 1349px;
-    height: 300px;
+.img_o{
+    margin-right: -29px;
+    margin-top: -5px;
 }
 
-.footer__logo{
-    width: 197px;
-    height: 84px;
-    margin: 0;
-    padding: 0;
+.iframe {
+    margin-bottom: 100px;
 }
+
+.a_tel,
+.a_address {
+    text-decoration: none;
+    color: #F5F5F5;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
