@@ -584,4 +584,38 @@ body{
   margin-top: 120px;
 }
 
+@media screen and (max-width: 992px) {
 
+    .hamburger,
+    .toggle-menu {
+        display: block;
+        /*убрали гамбургер*/
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #1E0C06;
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0px -5px 0px rgb(209, 21, 226) inset
+    }
