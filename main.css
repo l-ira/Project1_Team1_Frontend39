@@ -12,7 +12,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    z-index: 1;
+    z-index: -1;
 }
 
 /*.main-content_back {
@@ -53,7 +53,8 @@
     align-items: flex-start;
     justify-content: center;
     padding-left: 80px;
-    background-color: #46332dd0;
+    background-color: #46332d;
+    z-index: 1;
 }
 
 h1 {
@@ -71,7 +72,7 @@ h1 {
 
 .h1_404 {
     justify-content: center;
-    font-family: 
+    font-family: KyivType Sans;
     font-size: 500px;
     font-weight: 900;
     line-height: 539px;
@@ -138,7 +139,8 @@ div>p {
     align-items: center;
     height: 714px;
     width: 619px;
-    background-color: #46332dd0;
+    background-color: #46332d;
+    z-index: 1;
 }
 
 .image-1 {
@@ -296,9 +298,9 @@ li {
     align-items: flex-start;
     justify-content: center;
     padding-left: 60px;
-    background-color: #46332dd0;
+    background-color: #46332d;
     margin: 0;
-    -moz-box-shadow: 0 0 100px;
+    z-index: -1;
 }
 
 .title-6 {
@@ -326,7 +328,7 @@ li {
     margin: 0;
     align-items: center;
     height: 800px;
-    width: 560px;
+    width: 530px;
     background-color: #46332dd0;
 }
 
@@ -367,16 +369,18 @@ li {
     margin-bottom: -10px;
 }
 
-.footer:not(.footer__logo-privacy){
+.footer /*:not(.footer__logo-privacy)*/{
     display: flex;
+    background-color: #222021;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    width: 98vw;
+    width: 100vw;
     height: 300px;
     margin: 0;
     padding: 0;
-    border: 1px black solid;
+    box-shadow: 0 5px 30px 2px #F5F5F5 ;
+    z-index: 1;
 }
 
 .footer__logo-privacy{
