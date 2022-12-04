@@ -41,8 +41,8 @@
     gap: 10px;
     width: 225px;
     height: 58px;
-    border-radius: 10px;
-}
+    border-radius: 42px;
+}     
 
 .button-go {
     color: #F5F5F5;
@@ -54,6 +54,7 @@
     height: 58px;
     text-align: center;
     margin-bottom: 50px;
+    border-radius: 42px;
 }
 
 .button-go_a {
@@ -69,4 +70,5 @@
     gap: 10px;
     width: 472px;
     height: 58px;
+    border-radius: 42px;
 }
